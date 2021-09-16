@@ -10,6 +10,9 @@ def tmdprint(dat1, speed1):
 		print(x1, end='')
 		t.sleep(speed1)
 	print('')
+def JNL2Str(wut:str,ls:str):
+	for x in ls:
+		return (wut.join(ls))
 def printf(string):
 	print(string, end="")
 def RposNschar(str1, c):
@@ -50,11 +53,14 @@ def str2ASCII(stri):
 	print('')
 def FindRplChar(string, replacein, replacewith):
 	s = list(string)
+	c = ""
 	for cc in range(0, len(s)):
 		if s[cc] == replacein:
 			s[cc] = replacewith
-		print(''.join(s[cc]),end='')
-	print()
+		d = (''.join(s[cc]))
+		c = c+d
+	return c
+	# print()
 def ASCII2str(ASCII):
 	ASCII1 = ASCII.split(',')
 	for ASCII2 in ASCII1:
