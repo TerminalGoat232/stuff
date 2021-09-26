@@ -27,7 +27,8 @@ class ClickMouse(threading.Thread):
         while self.program_running:
             while self.running:
                 mouse.click(self.button)
-                #p.write('') # làm chi đó tuỳ mi
+                #p.write('') # do wwhatever u want
+                
                # p.press('enter')
                 time.sleep(self.delay)
             time.sleep(0.001)
